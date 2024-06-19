@@ -1,0 +1,59 @@
+:root{
+    --main-font: 'Oswald', sans-serif;
+    --secondary-font: 'Playwrite CO', Roboto;
+    --dead-color-1: #140a62;
+    --dead-color-2: #000000;
+    --live-color-1: #fbff00;
+    --live-color-2: #ff8c00;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    *{
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.dead{
+        background: linear-gradient(var(--dead-color-1), var(--dead-color-2));
+    }
+    &.live{
+        background: linear-gradient(var(--live-color-1), var(--live-color-2));
+    }
+}
+
+h1{
+    font-family: var(--secondary-font);
+    font-size: calc(0.9vw + 2.5rem);
+    @media(min-width: 710px){
+        font-size: 4.5rem;
+    }
+}
+.jogText{
+    max-width: 100vh;
+    *{
+        margin-bottom: 45px;
+        text-shadow: 3px 3px 5px #000000;
+    }
+    @media(min-width: 710px){
+        max-width: 80vh;
+    }
+}
+p{
+    font-size: calc(0.9vw + 3.5rem);
+    text-align: right;
+    @media(min-width: 710px){
+        font-size: 6rem;
+    }
+}
+
