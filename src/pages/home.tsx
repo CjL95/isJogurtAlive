@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { AppContext } from '../App';
 
 export const Home = () : React.JSX.Element =>{
