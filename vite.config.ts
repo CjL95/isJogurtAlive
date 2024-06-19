@@ -11,5 +11,11 @@ export default defineConfig({
         implementation: sass
       }
     }
+  },
+  server: {
+    hmr: {
+      host: 'localhost',
+      port: 4173
+    }
   }
 })
